@@ -18,10 +18,11 @@
     align-items: center;
     border-right: 5px solid gray;
     font-family: 'Lato', sans-serif;
+    text-align: center;
 }
 .left img{
     width: 40%;
-    border-radius: 90px;
+    border-radius: 150px;
 }
 .left h1{
     font-size: 50px;
@@ -122,4 +123,36 @@
 .contact a:hover{
     color: #222222;
     text-decoration: underline;
+}
+@media (max-width: 1290px){
+    .left h1{
+        font-size: 40px;
+    }
+    .left h2{
+        font-size: 20px;
+    }
+}
+@media (max-width: 768px){
+    .container{
+        width: 100%;
+        flex-direction: column;
+    }
+    .left{
+        border: none;
+        width: 100%;
+        padding: 20px 0 20px 0px;
+        border-bottom: 5px solid gray;
+        
+    }
+    .left img{
+        width: 30%;
+    }
+    .right{
+        padding: 0;
+        width: 100%;
+        padding: 20px 20px 20px 20px;
+    }
+    .about, .skills, .projects, .contact{
+        text-align: center;
+    }
 }
