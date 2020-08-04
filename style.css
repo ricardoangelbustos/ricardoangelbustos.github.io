@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    background-color: red;
+    width: 100%;
+    display: flex;
+}
+.left{
+    background-color: #222222;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: 5px solid gray;
+}
+.left img{
+    width: 40%;
+}
+.left h1{
+    font-size: 50px;
+    margin-top: 20px;
+}
+.left h2{
+    font-size: 30px;
+    color: #868a8b;
+}
+.left h1,h2{
+    color: white;
+}
+.logos{
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+}
+.logos i{
+    color: #868a8b;
+    font-size: 35px;
+    transition: 500ms;
+    margin-right: 1%;
+}
+.logos i:hover{
+    color: white;
+}
+.right{
+    background-color: #ecf0f1;
+    width: 70%;
+    padding: 20px 20px 20px 30px;
+}
+.about{
+    display: flex;
+    flex-direction: column;
+}
+.about h3{
+    font-size: 30px;
+    margin-bottom: 25px;
+    font-weight: 100;
+}
+.about h4{
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #83878a;
+}
+.about h4 span{
+    font-weight: 100;
+}
+.skills{
+    margin-top: 30px;
+}
+.skills h3{
+    font-size: 30px;
+    margin-bottom: 25px;
+    font-weight: 100;
+}
+.skills p{
+    font-size: 20px;
+    line-height: 30px;
+    color: #83878a;
+}
+.projects{
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px;
+}
+.projects h3{
+    font-size: 30px;
+    margin-bottom: 25px;
+    font-weight: 100;
+}
+.projects a{
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #83878a;
+    transition: 500ms;
+    font-weight: 600;
+}
+.projects a:hover{
+    color: #222222;
+}
+.contact{
+    margin-top: 30px;
+}
+.contact h3{
+    font-size: 30px;
+    margin-bottom: 25px;
+    font-weight: 100;
+}
+.contact p{
+    color: #83878a;
+}
