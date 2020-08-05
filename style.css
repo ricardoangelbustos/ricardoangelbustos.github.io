@@ -5,7 +5,6 @@
     box-sizing: border-box;
 }
 .container{
-    background-color: red;
     width: 100%;
     display: flex;
 }
@@ -19,20 +18,21 @@
     border-right: 5px solid gray;
     font-family: 'Lato', sans-serif;
     text-align: center;
+    padding-top: 10px;
 }
 .left img{
-    width: 40%;
+    width: 30%;
     border-radius: 150px;
 }
 .left h1{
-    font-size: 50px;
+    font-size: 40px;
     margin-top: 20px;
 }
 .left h2{
     font-size: 30px;
     color: #868a8b;
 }
-.left h1,h2{
+.left h1{
     color: white;
 }
 .logos{
@@ -49,41 +49,71 @@
 .logos i:hover{
     color: white;
 }
-.right{
-    background-color: #ecf0f1;
-    width: 70%;
-    padding: 20px 20px 20px 30px;
-    font-family: 'Lato', sans-serif;
-}
 .about{
     display: flex;
     flex-direction: column;
+    color: white;
+    text-align: left;
+    padding: 10px;
 }
 .about h3{
-    font-size: 30px;
+    font-size: 25px;
     margin-bottom: 25px;
     font-weight: 100;
+    text-decoration: underline;
 }
 .about h4{
     font-size: 20px;
     margin-bottom: 20px;
-    color: #83878a;
 }
 .about h4 span{
     font-weight: 100;
 }
 .skills{
     margin-top: 30px;
+    text-align: left;
+    padding: 10px;
+    color: white;
 }
 .skills h3{
-    font-size: 30px;
+    font-size: 25px;
     margin-bottom: 25px;
     font-weight: 100;
+    text-decoration: underline;
 }
 .skills p{
     font-size: 20px;
-    line-height: 30px;
+    line-height: 35px;
+    color: white;
+}
+.contact{
+    margin-top: 30px;
+    text-align: left;
+    padding: 10px 10px 20px 10px;
+}
+.contact h3{
+    font-size: 25px;
+    margin-bottom: 25px;
+    font-weight: 100;
+    text-decoration: underline;
+    color: white;
+}
+.contact a{
     color: #83878a;
+    text-decoration: none;
+    transition: 500ms;
+    font-weight: 400;
+    color: white;
+}
+.contact a:hover{
+    color: #868a8b;
+    text-decoration: underline;
+}
+.right{
+    background-color: #ecf0f1;
+    width: 70%;
+    padding: 20px 20px 20px 30px;
+    font-family: 'Lato', sans-serif;
 }
 .projects{
     display: flex;
@@ -94,35 +124,21 @@
     font-size: 30px;
     margin-bottom: 25px;
     font-weight: 100;
-}
-.projects a{
-    margin-bottom: 20px;
-    text-decoration: none;
-    color: #83878a;
-    transition: 500ms;
-    font-weight: 600;
-}
-.projects a:hover{
-    color: #222222;
     text-decoration: underline;
+    text-align: center;
 }
-.contact{
-    margin-top: 30px;
+.row{
+    display: flex;
+    text-align: center;
+    margin-top: 50px;
 }
-.contact h3{
-    font-size: 30px;
-    margin-bottom: 25px;
-    font-weight: 100;
-}
-.contact a{
-    color: #83878a;
-    text-decoration: none;
+.projects a img{
+    width: 85%;
     transition: 500ms;
-    font-weight: 400;
+    border-radius: 10px;
 }
-.contact a:hover{
-    color: #222222;
-    text-decoration: underline;
+.projects a img:hover{
+    transform: scale(1.22);
 }
 @media (max-width: 1290px){
     .left h1{
@@ -130,6 +146,9 @@
     }
     .left h2{
         font-size: 20px;
+    }
+    .projects a img{
+        width: 85%;
     }
 }
 @media (max-width: 768px){
@@ -154,5 +173,10 @@
     }
     .about, .skills, .projects, .contact{
         text-align: center;
+    }
+}
+@media (max-width: 425px){
+    .left h1{
+        font-size: 35px;
     }
 }
